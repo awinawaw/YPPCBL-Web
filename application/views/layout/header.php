@@ -17,7 +17,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     box-sizing: border-box;}
   
 html {   
-    font-size: 14px;}
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
 
 body {
     font-size: 1em;
@@ -120,10 +122,180 @@ body {
 						
   		
   
-  /* Change color on hover */
-  .navbar_top a:hover {
-    background-color: #ddd;
-    color: black;}
+  /* View Login */
+  .login-page {
+  min-height: 80vh;
+  background: #f2f2f2;
+  text-align: center; }
+  .login-page__box {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: inline-block;
+    background: white;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+ 	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px; }
+    @media (min-width: 768px) {
+      .login-page__box {
+        width: 400px; } }
+  	.login-page__title {
+    	text-align: center;
+		margin-bottom: 40px; }
+		.login-page__btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px; }
+  .login-page__fields {
+    margin-top: 20px; }
+    .login-page__fields:first-child {
+      margin-top: 0; }
+    .login-page__fields .fields__input {
+      width: 100%;
+      padding: 8px 33px 8px 16px; }
+  .login-page__error {
+    list-style: none;
+    padding-left: 0; }
+    .login-page__error li {
+      display: block;
+      font-size: small;
+      margin: .5em 0;
+      font-style: italic; }
+  .login-page__tab .tab__link {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #3cc4e5;
+    cursor: pointer; }
+    .login-page__tab .tab__link:hover {
+      background-color: rgba(60, 196, 229, 0.4);
+      color: inherit; }
+    .login-page__tab .tab__link--active {
+      background-color: #3cc4e5;
+      color: white; }
+  .login-page__tab .tab__content {
+    margin-top: 20px; }
+  .login-page__addon {
+    margin-top: 20px; }
+  .login-page__addon-item {
+    margin-right: 10px;
+    color: #3cc4e5; }
+    .login-page__addon-item:after {
+      content: "|";
+      margin-left: 10px;
+      color: #4a4a4a; }
+    .login-page__addon-item:last-child:after {
+      display: none; }
+
+	.login-page__tab-list {
+    	list-style: none;
+    	display: -ms-flexbox;
+    	display: flex;
+    	padding: 0;
+		border: 1px solid #3cc4e5; }
+	.login-page__tab {
+    	width: 50%;
+    	text-align: center;
+    	cursor: pointer;
+    	padding: .5em; }
+    .login-page__tab--selected {
+      background-color: #3cc4e5;
+	  color: white; }
+	  .login-page__fields {
+    margin-top: 20px; }
+    .login-page__fields:first-child {
+      margin-top: 0; }
+    .login-page__fields .fields__input {
+      width: 100%;
+      padding: 8px 33px 8px 16px; }
+
+	  /* register css */
+
+	  .register-page {
+  min-height: 80vh;
+  background: #f2f2f2;
+  text-align: center; }
+  .register-page__box {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: inline-block;
+    background: white;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px; }
+    @media (min-width: 768px) {
+      .register-page__box {
+        width: 600px;
+        min-height: 400px;
+        padding: 20px; } }
+  .register-page__title {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    color: black;
+    font-size: 2em; }
+  .register-page__text {
+    text-align: center;
+    display: block;
+    font-size: 1.25em; }
+  .register-page__btn_container {
+    margin: 20px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media (min-width: 768px) {
+      .register-page__btn_container {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .register-page__btn {
+    margin: 20px; }
+  .register-page__btn--blue {
+    background-color: #3cc4e5;
+    color: white;
+    -webkit-box-shadow: 0px 2px 0 0 #2e98b1;
+            box-shadow: 0px 2px 0 0 #2e98b1; }
+  .register-page__footer {
+    text-align: center; }
+
+	  
+	  /* field css*/
+	  .fields {
+  text-align: left;
+  margin-bottom: 20px; }
+  .fields__label {
+    display: block;
+    color: #181818;
+    margin-bottom: .5em; }
+  .fields__label--no-label {
+    display: none; }
+  .fields__input {
+    border-radius: 4px;
+    border: solid 1px #dedede;
+    padding: .5em 1em;
+    width: 100%; }
+    .fields__input:focus {
+      outline: 0;
+      border-color: #3cc4e5; }
+    .fields__input--error {
+      border-color: #fb4040; }
+  .fields__error {
+    display: block;
+    padding: .25em 0; }
+  .fields .star {
+    color: #3cc4e5;
+    margin-left: .25em;
+    font-size: 1.25em; }
+
 
 	</style>
 	<title>YPPCBL</title>
