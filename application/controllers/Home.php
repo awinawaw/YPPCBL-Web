@@ -36,7 +36,7 @@ class Home extends CI_Controller {
 		$this->load->view('layout/header');
 		$this->load->view('layout/head');
 		$this->load->view('layout/navbar');
-		$this->load->view('signup_pasien<');
+		$this->load->view('signup_pasien');
 		$this->load->view('layout/footer');
 	}
 

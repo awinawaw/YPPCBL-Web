@@ -26,9 +26,7 @@
                                 <label>No. Hp</label>
                                 <input type="string" name="phone" value="" class="fields__input undefined-input">
                             </div>
-                            <button type="submit" id="add-submit" class="btn btn-accent login-page__btn undefined">
-                                <canvas class="ink" height="0" width="0" style="border-radius: inherit; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;">
-                                </canvas>Submit</button>
+                            <button type="submit" class="btn btn-accent login-page__btn undefined"> n   Submit</button>
                         </form>
                     </div>
                     
